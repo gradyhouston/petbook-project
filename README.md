@@ -28,11 +28,11 @@ With this app, you can create a profile for your pet and find local pet services
 
 <h3><em><strong>Project team members</strong></em>:</h3>
 
-<a href="https://github.com/gradyhouston">Grady Houston</a>
+Grady Houston
 
-<a href="https://github.com/dchen95">David Chen</a>
+David Chen
          
-<a href="https://github.com/Greengecko19">Kamran Grasselli</a>
+Kamran Grasselli
 
 Mary Solorzano
 
