@@ -2,7 +2,7 @@
 
 With this app, you can create a profile for your pet and find local pet services near you.
 
-<em><strong>How to use this app</strong></em>:
+<h3><em><strong>How to use this app</strong></em>:</h3>
 
 • Register an account for yourself
 
@@ -13,7 +13,7 @@ With this app, you can create a profile for your pet and find local pet services
 • Search for pet services near you using the maps feature
 
 
-<em><strong>What was used to build this app</strong></em>:
+<h3><em><strong>What was used to build this app</strong></em>:</h3>
 
 • Node.js
 
@@ -26,7 +26,7 @@ With this app, you can create a profile for your pet and find local pet services
 • Passport.js
 
 
-<em><strong>Project team members</strong></em>:
+<h3><em><strong>Project team members</strong></em>:</h3>
 
 <a href="https://github.com/gradyhouston">Grady Houston</a>
 
