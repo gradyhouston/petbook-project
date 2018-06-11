@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="registration-container col-md-12 mb-6">
+    <div class="registration-header"><h2><strong>Register Your User Account</strong><h2></div>
+      <form id="signup" name="signup" method="post" action="/signup">
+        <div class="form-row">
+            <div class="col-md-6 mb-6">
+                <label for="firstname">First Name</label>
+                <input type="text" class="form-control" name = "firstname" placeholder="Enter First Name">
+            </div>
+            <div class="col-md-6 mb-6">
+                <label for="lastname">Last name</label>
+                <input type="text" class="form-control" name = "lastname" placeholder="Enter Last Name">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" aria-describedby="emailHelp" name = "email" placeholder="Enter Email Address">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name = "password" placeholder="Enter Password">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck2">
+                <!-- <label class="form-check-label" for="invalidCheck2"> -->
+                  <a href="/terms" class="terms">Agree to terms and conditions</a>
+                <!-- </label> -->
+            </div>
+        </div>
+        <div><button class="btn btn-signup-registration btn-primary" type="submit">Submit Registration</button>
+        <a href="/" class="btn back-home-register btn-login btn-primary" role="button">Back Home</a>
+      </div>
+    </form>
+  </div>
+    {{#if signUpMessage}}
+    <div class="alert alert-danger">{{signUpMessage}}</div>
+  {{/if}}
+</div>

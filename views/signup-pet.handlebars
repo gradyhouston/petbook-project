@@ -1,0 +1,62 @@
+<div class="container">
+
+  <div class="registration-container col-md-12 mb-6">
+    <form id="signup" name="signup" method="post" action="/api/signup-pet">
+        <div class="form-row">
+          <div class="pet-registration-header"><h2><strong>Registering your Pet's Account</strong><h2></div>
+            <div class="col-md-6 mb-6">
+                <label for="pet-name">Pet Name</label>
+                <input type="text" class="form-control" id="pet-name" placeholder="Enter Your Pet's Name">
+            </div>
+            <div class="col-md-6 mb-6">
+                <label for="breed">Pet Breed</label>
+                <input type="text" class="form-control" id="pet-breed" placeholder="Enter Your Pet's Breed">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="pet-age">Pet Age</label>
+                <input type="text" class="form-control" id="pet-age" placeholder="Enter Your Pet's Age">
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="pet-temperament">Pet Temperament</label>
+                <input type="text" class="form-control" id="pet-temperament" placeholder="Enter Your Pet's Temperament">
+            </div>
+
+        </div>
+
+        <div class="form-group">
+          <div class="form-check">
+            <label  hidden id="UserId">{{id}}</label>
+          </div>
+        </div>
+        <button class="btn btn-signup-pet btn-primary" id = "submitBtn" type="submit">Submit Registration</button>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+  $(function() {
+    $('#submitBtn').on('click', (event) => {
+      event.preventDefault();
+      const newPet = {
+        pets_name: $('#pet-name').val().trim(),
+        pets_breed: $('#pet-breed').val().trim(),
+        pets_age: $('#pet-age').val().trim(),
+        pets_temperament: $('#pet-temperament').val().trim(),
+        UserId: {{id}},
+      };
+      if (Object.values(newPet).includes('')) return;
+      $.ajax('/api/signup-pet', {
+        type: 'POST',
+        data: newPet,
+        success: (res) => {
+          window.location.href = '/profile';
+        }
+      });
+      // .get('/profile', (req, res) => {
+      //   res.render('profile.handlebar');
+      // });
+    });
+  });
+</script>
