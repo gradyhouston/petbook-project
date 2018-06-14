@@ -11,7 +11,8 @@ const db = require('./models');
 
 const exphbs = require("express-handlebars");
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, 'public')));
 //BodyParser
 app.use(bodyParser.urlencoded({
   extended: true
