@@ -43,10 +43,10 @@ With this app, you can create a profile for your pet and find local pet services
 
 <h6>• Add more features to the Pet Profile</h6>
 
-       • <h6>• Activities tab for posting articles and related information</h6>
-       • <h6>• Friends tab and ability to add other users</h6>
-       • <h6>• Settings tab for configuring your own profile settings</h6>
-       • <h6>• Add more default services for the map </h6>
+       • Activities tab for posting articles and related information
+       • Friends tab and ability to add other users
+       • Settings tab for configuring your own profile settings
+       • Add more default services for the map 
 
 <h6>• Use another UI library other than Bootstrap</h6>
 
