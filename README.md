@@ -37,3 +37,21 @@ With this app, you can create a profile for your pet and find local pet services
 <h6>Mary Solorzano</h6>
 
 <h6><a href="https://github.com/dchen95/2-Project/graphs/contributors">Link to original repo with contributions</a></h6>
+
+
+<h4><em><strong>TODO</strong></em>:</h4>
+
+<h6>• Add more features to the Pet Profile</h6>
+
+       • <h6>• Activities tab for posting articles and related information</h6>
+       • <h6>• Friends tab and ability to add other users</h6>
+       • <h6>• Settings tab for configuring your own profile settings</h6>
+       • <h6>• Add more default services for the map </h6>
+
+<h6>• Use another UI library other than Bootstrap</h6>
+
+<h6>• Try to get modals to work</h6>
+
+<h6>• Adding a chat feature to chat with other members</h6>
+
+<h6>• Dry up code a bit</h6>
